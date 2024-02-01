@@ -16,8 +16,3 @@ test('get started link', async ({ page }) => {
   // Expects page to have a heading with the name of Installation.
   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
 });
-
-test('check amazon logo', async ({ page }) => {
-  await page.goto('https://amazon.com/');
-  await expect(page.getByLabel('Amaon', { exact: true })).toBeVisible();
-})

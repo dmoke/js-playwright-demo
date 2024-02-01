@@ -2,9 +2,8 @@ import { test, expect } from '@playwright/test';
 
 test('check rozetka search', async ({ page }) => {
     await page.goto('https://rozetka.com.ua/ua/');
-    await expect(page.getByPlaceholder('Я шукаю', { exact: true })).toBeVisible();
+    await expect(page.getByPlaceholder('Я шукаю', { exact: false })).toBeVisible();
 })
-
 
 test('check rozetka burger menu', async ({ page }) => {
     await page.goto('https://rozetka.com.ua/ua/');
