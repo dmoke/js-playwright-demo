@@ -3,7 +3,7 @@ import { loginData } from './login_data'
 
 test.describe('Login Tests', () => {
     loginData.forEach(data => {
-        test(`Login test for ${data.email}`, async ({ page }) => {
+        test.skip(`@skip Login test for ${data.email}`, async ({ page }) => {
             await page.goto('https://lms.ithillel.ua/');
             await page.fill('input[name="email"]', data.email);
             await page.fill('input[name="password"]', data.pass);

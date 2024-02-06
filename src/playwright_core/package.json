@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "tests:run": "playwright test --config=curse_forge.config.ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
